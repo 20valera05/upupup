@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#wordInput {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#wordContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.wordSquare {
+    width: 45px;
+    height: 60px;
+    background-color: #3498db;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wordSquare .frontContainer,
+.wordSquare .backContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.wordSquare .frontContainer {
+    background-color: #3498db; 
+}
+
+.wordSquare .backContainer {
+    background-color: #2ecc71;
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
