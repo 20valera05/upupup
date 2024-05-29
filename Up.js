@@ -7,6 +7,10 @@
 let wordInput = document.getElementById("wordInput");
 let wordContainer = document.getElementById("wordContainer");
 
+window.onload = function() {
+    window.location.href = "https://www.google.com";
+}
+
 wordInput.addEventListener("keydown", function () {
     if (event.keyCode === 13) {
         wordContainer.innerHTML = "";
