@@ -20,8 +20,8 @@ body {
 }
 
 .wordSquare {
-    width: 45px;
-    height: 60px;
+    width: 115px;
+    height: 140px;
     background-color: #3498db;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 72px;
     color: white;
 }
 
